@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-VariableFont_wght.ttf');
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {font-size: 62.5%;}
+body {font-size: 1.6rem; font-family: 'Playfair Display', sans-serif;}
+
+.resume {padding: 3rem;}
+.resume__img {
+  width: 10rem;
+  height: auto;
+}
+.resume__heading {
+  font-size: 1.6rem;
+  color: cornflowerblue;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.header__links {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 0;
+}
+.header__links a {
+  color: cornflowerblue;
+  font-weight: 600;
+  text-decoration: none;
+}
+.heading--main {
+  font-size: 5rem;
+}
+
+.project {
+  margin: 2rem 0 0;
+}
+.project__heading {
+  font-size: 2rem;
+}
+.project__heading--sub {
+  display: block;
+  font-size: 1.6rem;
+  opacity: .5;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .resume {padding: 5rem;}
+  .resume--small {padding: 1rem 5rem 5rem;}
+  .paragraph {width: 80%;}
+  .resume__header, .resume__body {display: flex;}
+  .resume__skills, .header__links {order: 2; flex-basis: 40%; padding: 0 0 0 10%;}
+  .heading-container, .resume__projects {flex-basis: 60%;}
+  .project {
+    width: 80%;
+  }
+}
